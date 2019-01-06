@@ -7,5 +7,9 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami           = "ami-0c8b1f91516a2f6f8"
   instance_type = "t2.micro"
-  key_name = "cckeypair"
+  key_name = "gcckeypair"
 }
+
+tags { 
+  Nmae = "apache-server"
+  }
